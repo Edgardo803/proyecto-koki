@@ -34,43 +34,36 @@ body {
    ========================================================================== */
 header {
     background-color: var(--bg-header);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #1a202c; /* Línea sutil premium abajo */
 }
 
-.logo-container {
+/* ESTO CORRIGE EL AIRE: Empuja el logo a la izquierda y el menú a la derecha */
+.header-container {
     display: flex;
+    justify-content: space-between; 
     align-items: center;
-    gap: 12px;
+    padding: 0.5rem 5%; /* Dale "aire" a los costados */
+    width: 100%;
 }
 
-.logo-img {
-    height: 55px;
+/* Control fino del logotipo corporativo */
+.logo-corporativo {
+    max-height: 55px; /* Tamaño elegante en el menú */
     width: auto;
     object-fit: contain;
-    margin-top: 5px;    /* Lo baja un cachito para centrarlo verticalmente */
-    margin-left: 15px;  /* Despega el recuadro blanco del borde de la pantalla */
-    border-radius: 4px; /* Opcional: redondea apenas las esquinas del cuadro blanco */
-}
-
-.brand-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: var(--text-light);
+    margin-top: 5px;    /* Lo centra verticalmente */
+    border-radius: 4px; /* Suaviza las esquinas del recuadro blanco */
 }
 
 nav ul {
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 2rem;
+    gap: 2rem; /* Espacio entre los enlaces del menú */
 }
 
 nav a {
@@ -366,3 +359,4 @@ form {
     flex-direction: column;
     gap: 20px; /* Separa un poco los campos entre sí */
 }
+
