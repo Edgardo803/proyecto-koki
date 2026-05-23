@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Kokinect</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li><a href="contacto.html">Contactar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto Comercial</h1>
+        <p>Envíenos sus requerimientos técnicos y le responderemos a la brevedad.</p>
+
+        <form action="https://formspree.io/f/maqkjwlg" method="POST">
+            
+            <div class="form-group">
+                <label for="nombre">Nombre Completo / Empresa:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Bodega Catena Zapata">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico de Contacto:</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@empresa.com">
+            </div>
+
+            <div class="form-group">
+                <label for="tipo-insumo">Tipo de Insumo Requerido:</label>
+                <select id="tipo-insumo" name="tipo-insumo">
+                    <option value="" disabled selected>Seleccione una opción...</option>
+                    <option value="mosquetones">Mosquetones elásticos completos</option>
+                    <option value="punteras">Punteras de mosquetones para armado manual</option>
+                    <option value="mixtos">Otros componentes plásticos o mixtos (con alma de acero)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion">Detalles del Requerimiento Técnico:</label>
+                <textarea id="descripcion" name="descripcion" rows="5" placeholder="Describa brevemente..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <p style="color: #8b9bb4; font-size: 0.9em;">
+                    * Para enviar planos técnicos o imágenes pesadas, contáctanos directamente a nuestro correo oficial una vez enviada esta consulta.
+                </p>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Consulta</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Consultores Koki.</p>
+    </footer>
+
+</body>
+</html>
